@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>safy.gg</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Lion Shabani</a>
+        <ul>
+            <li><a class="active">Home</a></li>
+            <li><a href="https://github.com/VAXU5">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/lion-shabani-617725232/">Contact</a></li>
+
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" id="stars">
+        <img src="moon.png" id="moon">
+        <img src="mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Hello World</h2>
+        <a href="#sec" id ="btn">Explore</a>
+        <img src="mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Portfolio</h2>
+        <p>Hey, my name is Lion Shabani! I am currently 14 years old and striving for a career path towards computer science. </p><br><br>
+        <p>My favourite activities are: listening to podcasts, programming, learning and reading and writing books, because when I do these thinks, I feel like its just me and the activity and no other people and interuptions.</p><br>
+        <p>I also want to help other people because programming is nothing more than problem solving.</p><br>
+        <p>I always wanted to get a computer to play video games with it in better quality and frame rate, but as soon as I got a 5 hours Python tutorial recommended, many things changed!</p><br>
+        <p>I didn't start programming for anything else but for fun and now im trying to get a job in that direction, life often turns and breaks.</p><br><br>
+        <p>If you're intrested in some projects of mine, please view them by going on my github!<p><br>
+        <p>Anyways, thank you for visiting this website ❤</p>
+    </div>
+    <script>
+        let stars = document.getElementById('stars')
+        let moon = document.getElementById('moon')
+        let mountains_background = document.getElementById('mountains_background')
+        let text = document.getElementById('text')
+        let btn = document.getElementById('btn')
+        let mountains_front = document.getElementById('mountains_front')
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 0.25 + 'px';
+        })
+    </script>
+</body>
+</html>
